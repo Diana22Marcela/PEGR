@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+  <title>Encuentra la ruta de evacación correcta.</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Encuentra la ruta de evacación correcta.</h1>
+    <div class="buttons">
+      <button onclick="openPopup('Tercera+salida.mp4')">Ruta 1</button>
+      <button onclick="openPopup('Segunda+salida.mp4')">Ruta 2</button>
+      <button onclick="openPopup('Salida+correcta.mp4')">Ruta 3</button>
+    </div>
+  </div>
+  <div id="popup" class="popup">
+    <div class="popup-content">
+      <video id="video" controls></video>
+      <span class="close" onclick="closePopup()">&times;</span>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
